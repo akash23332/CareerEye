@@ -1,0 +1,123 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #333;
+}
+
+/* Remove max-width from .container */
+.container {
+    margin: 0 auto;  /* Keep margin: 0 auto for horizontal centering */
+    padding: 20px;
+    background-color: black;
+}
+
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color:rgb(48, 44, 44);
+    padding: 20px;
+    border-radius: 8px; 
+    /* Add width: 100% to make header full width */
+    width: 100%; /* Or width: 100vw; for viewport width */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+header h1{
+    color: #e32652;
+}
+header p{
+    color: white;
+}
+
+
+h1 {
+    color: white;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column; /* Stack course cards vertically */
+    gap: 20px; /* Space between cards */
+}
+
+.course-card {
+    display: flex;
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 20px;
+    gap: 100px;
+    background-color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+}
+.course-details h2{
+    font-size: 40px;
+    color: white;
+}
+.course-details p{
+    font-size: 20px;
+    color: white;
+}
+ 
+.course-card img {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 8px; /* Rounded corners for image */
+}
+
+.course-details {
+    flex: 1; /* Allow details to expand */
+}
+
+.price-discount {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.current-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #777;
+    margin-right: 10px;
+}
+
+.discount-tag {
+    background-color: #4CAF50; /* Green discount tag */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.course-info {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.explore-button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark gray footer */
+    color: white;
+}

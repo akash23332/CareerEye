@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Rapture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #1e1e2f;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .pricing-card {
+            background: #29293d;
+            padding: 30px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        .pricing-card h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 28px;
+            font-weight: 700;
+            color: #e32652;;
+            margin-bottom: 15px;
+        }
+        .features {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .features li {
+            list-style: none;
+            padding: 8px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #e32652;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #e67e22;
+        }
+        @media (max-width: 768px) {
+            .pricing-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Plan</h1>
+    <p>Get the best gaming experience with our exclusive plans</p>
+
+    <div class="pricing-container">
+        <div class="pricing-card">
+            <h2>Basic Pack</h2>
+            <p class="price">₹399/month</p>
+            <ul class="features">
+                <li>🎮 Access to standard courses</li>
+                <li>📚 Single-Device-use only</li>
+                <li>🏆 Limited in-offers</li>
+                <li>📞 Community support</li>
+            </ul>
+            <a href="payment.html" class="btn">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+            <h2>Pro Pack</h2>
+            <p class="price">₹999/month</p>
+            <ul class="features">
+                <li>✅ Everything in Basic</li>
+                <li>🧑‍🤝‍🧑 two persons access</li>
+                <li>🔥 Exclusive scholarships and Competitions</li>
+                <li>⚡ Priority support</li>
+            </ul>
+            <a href="payment.html" class="btn">Get Started</a>
+        </div>
+
+        <div class="pricing-card">
+            <h2>Elite Pack</h2>
+            <p class="price">₹1,499/month</p>
+            <ul class="features">
+                <li>✅ Everything in Pro</li>
+                <li>🚀 Early access to new courses</li>
+                <li>👑 VIP community access</li>
+            </ul>
+            <a href="payment.html" class="btn">Get Started</a>
+        </div>
+    </div>
+</body>
+</html>
